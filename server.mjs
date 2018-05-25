@@ -1,5 +1,6 @@
 
-import { generateUserToken } from '@tanker/user-token';
+const userToken = require('@tanker/user-token');
+const { generateUserToken } = userToken;
 
 // Store these configurations in a safe place
 const trustchainId = '<trustchain-id>';
