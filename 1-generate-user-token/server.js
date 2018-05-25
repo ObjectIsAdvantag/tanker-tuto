@@ -1,3 +1,9 @@
+//
+// Generates a token for the specified user
+// The token is used to connect to Tanker's trustchain
+// This token is to be transmitted to the Client applications once the user has authenticated
+// Note: the token does not expire, the Server application should store it, and revoke it if necessary
+//
 
 // Load environment variables from project .env file
 require('node-env-file')(__dirname + '/.env');
@@ -52,6 +58,6 @@ function storeUserToken() {
 }
 
 // Retreive a token for the specified user
-const userId = "12345"
+const userId = process.env.USER_ID || "12345"
 const token = getUserToken(userId)
-console.log(`NEW token: ${token} for user: ${userId}`)
+console.log(`NEW token:\n ${token}\nfor user: ${userId}`)

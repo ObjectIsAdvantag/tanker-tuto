@@ -1,0 +1,15 @@
+{
+  "name": "2-connect-from-client",
+  "version": "0.1.0",
+  "description": "",
+  "main": "client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stève Sfartz <stsfartz@cisco.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@tanker/core": "^1.6.2",
+    "node-env-file": "^0.1.8"
+  }
+}
