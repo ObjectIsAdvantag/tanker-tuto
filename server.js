@@ -1,10 +1,13 @@
 
+// Load environment variables from project .env file
+require('node-env-file')(__dirname + '/.env');
+
 const userToken = require('@tanker/user-token');
 const { generateUserToken } = userToken;
 
 // Store these configurations in a safe place
-const trustchainId = '<trustchain-id>';
-const trustchainPrivateKey = '<trustchain-private-key>';
+const trustchainId = process.env.TRUSTCHAIN_ID;
+const trustchainPrivateKey = process.env.TRUSTCHAIN_PRIVATE_KEY;
 
 // Example server-side function in which you would implement checkAuth(),
 // retrieveUserToken() and storeUserToken() to use your own authentication

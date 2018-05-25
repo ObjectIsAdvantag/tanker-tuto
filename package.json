@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/ObjectIsAdvantag/tanker-tuto#readme",
   "dependencies": {
-    "@tanker/user-token": "^1.4.1"
+    "@tanker/user-token": "^1.4.1",
+    "node-env-file": "^0.1.8"
   }
 }
