@@ -10,6 +10,9 @@
   "license": "MIT",
   "dependencies": {
     "@tanker/core": "^1.6.2",
-    "node-env-file": "^0.1.8"
+    "node-env-file": "^0.1.8",
+    "pouchdb-adapter-leveldb": "^6.4.3",
+    "pouchdb-core": "^6.4.3",
+    "pouchdb-find": "^6.4.3"
   }
 }
